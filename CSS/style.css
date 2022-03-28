@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  /* background-image: url("../img/bg.jpg"); */
+  background-image: linear-gradient(to right, #9dd3a2, #bca5c6);
+  background-size: 100vw 100vh;
+  min-height: 100vh;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  width: 90vmin;
+  height: 90vmin;
+  background-image: repeating-conic-gradient(
+    rgb(151 226 179) 0deg 90deg,
+    rgb(48 75 55) 90deg 180deg
+  );
+  background-size: 10vmin 10vmin;
+  border: 10px solid rgb(136, 43, 43);
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background: linear-gradient(rgb(236, 75, 75), rgb(202, 202, 71));
+  border: 2px solid rgb(61, 7, 61);
+  /* transform: scale(1.02); */
+  border-radius: 8px;
+}
+
+.snake {
+  background-color: purple;
+  border: 0.25vmin solid white;
+  border-radius: 8px;
+}
+
+.food {
+  /* background: linear-gradient(red, purple); */
+  background-image: url("../img/Frog.png");
+  background-size: 30px 30px;
+  border-radius: 8px;
+}
+
+/* Desigin Score Board ------------------------------------------------------ */
+#score_board_container {
+  width: 20%;
+  height: 80%;
+  background-color: #127d9e9c;
+  position: absolute;
+  right: 0%;
+  border-radius: 15px 0px 0px 15px;
+}
+#snake_img {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0%;
+}
+
+#score_text {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.score_content {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.score_img {
+  width: 60px;
+  height: 60px;
+  background-color: #7e4cc0;
+  border-radius: 50%;
+}
+.score_img_colon {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+}
+.score_number {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+}
+#trophy_img {
+  width: 50px;
+  height: 50px;
+  background-color: #7e4cc0;
+  border-radius: 50%;
+  padding: 5px;
+}
